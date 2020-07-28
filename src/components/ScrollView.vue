@@ -29,7 +29,7 @@ export default {
       if (this.loadingFlag) {
         return;
       }
-      if (a.scrollTop + document.body.scrollHeight >= a.scrollHeight - 10) {
+      if (a.scrollTop + document.body.scrollHeight >= a.scrollHeight - 20) {
         this.requestNewItem(5);
         a.scrollTop -= a.scrollHeight / 4;
       }
